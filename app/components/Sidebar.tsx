@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
-import { House, Gear, TestTube, ProjectorScreen, UserCircle, ChartLine, Icon } from 'phosphor-react';
+import { House, Gear, TestTube, ProjectorScreen, UserCircle, ChartLine, Icon, Scales } from 'phosphor-react';
 import { usePathname } from 'next/navigation';
 
 const Sidebar = () => {
@@ -17,6 +17,7 @@ const Sidebar = () => {
                     <SidebarItem icon={TestTube} href="/test-automation" label="Test Automation" />
                     <SidebarItem icon={Gear} href="/signal-planning" label="Signal Planning" />
                     <SidebarItem icon={ProjectorScreen} href="/time-table" label="Time Table" />
+                    <SidebarItem icon={Scales} href="/eulynx-score" label="ETCS/EULYNX Score" />
                 </ul>
             </nav>
             <div className="px-5 py-4 border-t border-slate-300">
